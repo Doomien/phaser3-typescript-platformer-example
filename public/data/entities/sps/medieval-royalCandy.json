@@ -1,0 +1,20 @@
+{
+  "id": "medieval-royalCandy",
+  "name": "medieval Royal Candy",
+  "category": "collectible",
+  "sprite": {
+    "key": "medieval-royalCandy-1",
+    "source": "assets/sps/medieval/assets/items/candy.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "medieval",
+    "originalId": "royalCandy"
+  }
+}

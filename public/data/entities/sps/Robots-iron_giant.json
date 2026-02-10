@@ -1,0 +1,25 @@
+{
+  "id": "Robots-iron_giant",
+  "name": "Robots Iron Giant",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-iron_giant-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/IronGiant.png",
+    "frameWidth": 93,
+    "frameHeight": 176
+  },
+  "physics": {
+    "bodyWidth": 93,
+    "bodyHeight": 176,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 20,
+    "speed": 0.25,
+    "attackStrength": 8,
+    "attackSpeed": 800,
+    "attackRange": 70,
+    "pack": "Robots",
+    "originalId": "iron_giant"
+  }
+}

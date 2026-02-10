@@ -1,0 +1,16 @@
+{
+    "id": "coin",
+    "name": "Coin",
+    "category": "collectible",
+    "sprite": {
+        "key": "coin",
+        "source": "assets/img/coin.png",
+        "frameWidth": 42,
+        "frameHeight": 42
+    },
+    "animation": {
+        "key": "spin",
+        "frameRate": 16,
+        "repeat": -1
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "SketchBook-radialBullet",
+  "name": "SketchBook Radial Bullet",
+  "category": "projectile",
+  "sprite": {
+    "key": "SketchBook-radialBullet-1",
+    "source": "assets/sps/SketchBook/assets/items/Multitool-small.png",
+    "frameWidth": 30,
+    "frameHeight": 30
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "SketchBook-radialBullet-1",
+      "SketchBook-radialBullet-2"
+    ],
+    "frameRate": 8,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 30,
+    "bodyHeight": 30,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "SketchBook",
+    "originalId": "radialBullet"
+  }
+}

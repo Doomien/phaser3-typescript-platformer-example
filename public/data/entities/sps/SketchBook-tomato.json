@@ -1,0 +1,34 @@
+{
+  "id": "SketchBook-tomato",
+  "name": "SketchBook Tomato",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-tomato-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/003_Tomato.png",
+    "frameWidth": 60,
+    "frameHeight": 66
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "SketchBook-tomato-1",
+      "SketchBook-tomato-2"
+    ],
+    "frameRate": 4,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 66,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 5,
+    "speed": 0.3,
+    "attackStrength": 2,
+    "attackSpeed": 600,
+    "attackRange": 40,
+    "pack": "SketchBook",
+    "originalId": "tomato"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "base-candy",
+  "name": "base Candy",
+  "category": "collectible",
+  "sprite": {
+    "key": "base-candy-1",
+    "source": "assets/sps/base/assets/items/candy.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "base",
+    "originalId": "candy"
+  }
+}

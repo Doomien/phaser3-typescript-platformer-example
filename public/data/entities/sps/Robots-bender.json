@@ -1,0 +1,25 @@
+{
+  "id": "Robots-bender",
+  "name": "Robots Bender",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-bender-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/Bender.png",
+    "frameWidth": 70,
+    "frameHeight": 163
+  },
+  "physics": {
+    "bodyWidth": 70,
+    "bodyHeight": 163,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 8,
+    "speed": 0.45,
+    "attackStrength": 3,
+    "attackSpeed": 550,
+    "attackRange": 50,
+    "pack": "Robots",
+    "originalId": "bender"
+  }
+}

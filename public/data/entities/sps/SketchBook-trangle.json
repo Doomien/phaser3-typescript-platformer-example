@@ -1,0 +1,34 @@
+{
+  "id": "SketchBook-trangle",
+  "name": "SketchBook Trangle",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-trangle-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/002_Trangle.png",
+    "frameWidth": 62,
+    "frameHeight": 66
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "SketchBook-trangle-1",
+      "SketchBook-trangle-2"
+    ],
+    "frameRate": 8,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 62,
+    "bodyHeight": 66,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 2,
+    "speed": 0.5,
+    "attackStrength": 1,
+    "attackSpeed": 400,
+    "attackRange": 40,
+    "pack": "SketchBook",
+    "originalId": "trangle"
+  }
+}

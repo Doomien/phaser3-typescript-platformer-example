@@ -1,11 +1,13 @@
-import CoinSingle from './coinSingle'
+import Phaser from 'phaser';
+import type { TilesConfig } from '../../types/index';
+import CoinSingle from './coinSingle';
 
 export default class CoinGroup extends Phaser.GameObjects.Group {
   constructor(scene: Phaser.Scene, tiles: TilesConfig[]) {
-    super(scene)
+    super(scene);
 
-    tiles.forEach(tile => {
-      this.add(new CoinSingle(scene, tile))
-    })
+    tiles.forEach((tile) => {
+      this.add(new CoinSingle(scene, tile));
+    });
   }
 }

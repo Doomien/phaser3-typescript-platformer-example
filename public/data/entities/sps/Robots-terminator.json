@@ -1,0 +1,25 @@
+{
+  "id": "Robots-terminator",
+  "name": "Robots Terminator",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-terminator-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/Terminator.png",
+    "frameWidth": 46,
+    "frameHeight": 102
+  },
+  "physics": {
+    "bodyWidth": 46,
+    "bodyHeight": 102,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 14,
+    "speed": 0.42,
+    "attackStrength": 5,
+    "attackSpeed": 550,
+    "attackRange": 85,
+    "pack": "Robots",
+    "originalId": "terminator"
+  }
+}

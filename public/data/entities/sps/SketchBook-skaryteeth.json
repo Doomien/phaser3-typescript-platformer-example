@@ -1,0 +1,25 @@
+{
+  "id": "SketchBook-skaryteeth",
+  "name": "SketchBook Skary Teeth",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-skaryteeth-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/SkaryTeeth_Pixel.png",
+    "frameWidth": 60,
+    "frameHeight": 64
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 64,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 2,
+    "speed": 0.5,
+    "attackStrength": 1,
+    "attackSpeed": 500,
+    "attackRange": 37,
+    "pack": "SketchBook",
+    "originalId": "skaryteeth"
+  }
+}

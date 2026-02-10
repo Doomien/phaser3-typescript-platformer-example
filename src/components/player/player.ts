@@ -1,82 +1,89 @@
-import Controls from '../controls/controls'
-import PlayerSpine from './playerSpine'
+import Phaser from 'phaser';
+import Controls from '../controls/controls';
+import type { EntityData } from '../../types/index';
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
-  private _dead: boolean = false
-  private _halt: boolean = false
-  private mapSize: MapSize
-  playerSpine: PlayerSpine
+  private _dead: boolean = false;
+  private _halt: boolean = false;
+  private mapSize: { x: number; y: number; width: number; height: number };
+  private entityData: EntityData;
 
-  constructor(scene: Phaser.Scene, player: TilesConfig, mapSize: MapSize, level: number) {
-    super(scene, player.x, player.y, player.texture)
-    scene.add.existing(this)
-    scene.physics.add.existing(this)
+  constructor(
+    scene: Phaser.Scene,
+    player: { x: number; y: number; texture: string },
+    mapSize: { x: number; y: number; width: number; height: number },
+    _level: number
+  ) {
+    super(scene, player.x, player.y, player.texture);
+    scene.add.existing(this);
+    scene.physics.add.existing(this);
 
-    this.scene = scene
-    this.mapSize = mapSize
+    this.scene = scene;
+    this.mapSize = mapSize;
 
-    // scene.anims.create({
-    //   key: 'walk',
-    //   frames: scene.anims.generateFrameNames('player'),
-    //   frameRate: 8,
-    //   repeat: -1
-    // })
-    // this.play('walk')
+    // Load data-driven properties
+    this.entityData = this.scene.cache.json.get('player-data') as EntityData;
+    const physics = this.entityData.physics!;
 
-    this.setVisible(false)
+    // Player animation from sprite sheet
+    scene.anims.create({
+      key: 'walk',
+      frames: scene.anims.generateFrameNames('player'),
+      frameRate: this.entityData.animation?.frameRate ?? 8,
+      repeat: this.entityData.animation?.repeat ?? -1,
+    });
+    this.play('walk');
 
-    this.setOrigin(0, 1)
-    this.setDragX(1500)
-    this.body.setSize(70, 132)
-    this.body.setOffset(25, 24)
+    this.setOrigin(0, 1);
+    this.setDragX(physics.dragX ?? 1500);
 
-    let theSkin = level % 2 == 0 ? 'blue' : 'green'
-    this.playerSpine = new PlayerSpine(scene, this.body.center.x, this.body.bottom)
-    this.playerSpine.setSkin(theSkin)
+    const body = this.body as Phaser.Physics.Arcade.Body;
+    body.setSize(physics.bodyWidth ?? 70, physics.bodyHeight ?? 132);
+    body.setOffset(physics.bodyOffsetX ?? 25, physics.bodyOffsetY ?? 24);
   }
 
   kill() {
-    this._dead = true
-
-    // animate the camera if the player dies
-    this.scene.cameras.main.shake(500, 0.025)
+    this._dead = true;
+    this.scene.cameras.main.shake(500, 0.025);
     this.scene.time.addEvent({
       delay: 500,
-      callback: () => this.scene.scene.restart()
-    })
+      callback: () => this.scene.scene.restart(),
+    });
   }
 
   killEnemy() {
-    this.playerSpine.spine.customParams.isKilling = true
-    this.setVelocityY(-600)
+    const props = this.entityData.properties as Record<string, number>;
+    this.setVelocityY(props.bounceVelocity ?? -600);
   }
 
   halt() {
-    this.body.enable = false
-    this._halt = true
+    (this.body as Phaser.Physics.Arcade.Body).enable = false;
+    this._halt = true;
   }
 
-  update(cursors: any, controls: Controls) {
-    if (this._halt || this._dead) return
+  update(cursors: Phaser.Types.Input.Keyboard.CursorKeys, controls: Controls) {
+    if (this._halt || this._dead) return;
 
-    // check if out of camera and kill
-    if (this.body.right < this.mapSize.x || this.body.left > this.mapSize.width || this.body.top > this.mapSize.height)
-      this.kill()
+    const body = this.body as Phaser.Physics.Arcade.Body;
+    const props = this.entityData.properties as Record<string, number>;
 
-    // controls left & right
+    // Check if out of map bounds
+    if (body.right < this.mapSize.x || body.left > this.mapSize.width || body.top > this.mapSize.height) {
+      this.kill();
+    }
+
+    // Controls left & right
     if (cursors.left.isDown || controls.leftIsDown) {
-      this.setVelocityX(-500)
-      this.setFlipX(true)
+      this.setVelocityX(-(props.speed ?? 500));
+      this.setFlipX(true);
     } else if (cursors.right.isDown || controls.rightIsDown) {
-      this.setVelocityX(550)
-      this.setFlipX(false)
-    }
-    // controls up
-    if ((cursors.up.isDown || cursors.space.isDown || controls.upIsDown) && this.body.blocked.down) {
-      this.setVelocityY(-1250)
+      this.setVelocityX(props.runSpeed ?? 550);
+      this.setFlipX(false);
     }
 
-    // update spine animation
-    this.playerSpine.update(this)
+    // Controls up
+    if ((cursors.up.isDown || cursors.space!.isDown || controls.upIsDown) && body.blocked.down) {
+      this.setVelocityY(props.jumpVelocity ?? -1250);
+    }
   }
 }

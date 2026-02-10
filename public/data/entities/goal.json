@@ -1,0 +1,11 @@
+{
+    "id": "goal",
+    "name": "Goal Flag",
+    "category": "prop",
+    "sprite": {
+        "key": "goal",
+        "source": "assets/img/goal.png",
+        "frameWidth": 64,
+        "frameHeight": 64
+    }
+}

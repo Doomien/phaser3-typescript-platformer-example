@@ -1,0 +1,31 @@
+{
+    "id": "player",
+    "name": "Player",
+    "category": "character",
+    "sprite": {
+        "key": "player",
+        "source": "assets/img/player.png",
+        "frameWidth": 120,
+        "frameHeight": 165
+    },
+    "animation": {
+        "key": "walk",
+        "startFrame": 0,
+        "endFrame": 7,
+        "frameRate": 8,
+        "repeat": -1
+    },
+    "physics": {
+        "bodyWidth": 70,
+        "bodyHeight": 132,
+        "bodyOffsetX": 25,
+        "bodyOffsetY": 24,
+        "dragX": 1500
+    },
+    "properties": {
+        "speed": 500,
+        "runSpeed": 550,
+        "jumpVelocity": -1250,
+        "bounceVelocity": -600
+    }
+}

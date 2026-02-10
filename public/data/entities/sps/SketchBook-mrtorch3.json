@@ -1,0 +1,25 @@
+{
+  "id": "SketchBook-mrtorch3",
+  "name": "SketchBook Mr torch",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-mrtorch3-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/mr_torch_small_png_1769890617641.png",
+    "frameWidth": 47,
+    "frameHeight": 64
+  },
+  "physics": {
+    "bodyWidth": 47,
+    "bodyHeight": 64,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 5,
+    "speed": 0.6,
+    "attackStrength": 6,
+    "attackSpeed": 500,
+    "attackRange": 40,
+    "pack": "SketchBook",
+    "originalId": "mrtorch3"
+  }
+}

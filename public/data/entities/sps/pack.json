@@ -1,0 +1,691 @@
+{
+  "sps": {
+    "files": [
+      {
+        "type": "json",
+        "key": "Robots-robocop-data",
+        "url": "data/entities/sps/Robots-robocop.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-robocop-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/RoboCop.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-bender-data",
+        "url": "data/entities/sps/Robots-bender.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-bender-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/Bender.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-c3po-data",
+        "url": "data/entities/sps/Robots-c3po.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-c3po-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/C3PO_2.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-data-data",
+        "url": "data/entities/sps/Robots-data.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-data-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/Data.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-iron_giant-data",
+        "url": "data/entities/sps/Robots-iron_giant.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-iron_giant-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/IronGiant.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-johnny5-data",
+        "url": "data/entities/sps/Robots-johnny5.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-johnny5-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/Johnny5.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-optimus_prime-data",
+        "url": "data/entities/sps/Robots-optimus_prime.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-optimus_prime-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/OptimusPrime.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-r2d2-data",
+        "url": "data/entities/sps/Robots-r2d2.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-r2d2-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/R2D2.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-terminator-data",
+        "url": "data/entities/sps/Robots-terminator.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-terminator-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/Terminator.png"
+      },
+      {
+        "type": "json",
+        "key": "Robots-wall_e-data",
+        "url": "data/entities/sps/Robots-wall_e.json"
+      },
+      {
+        "type": "image",
+        "key": "Robots-wall_e-1",
+        "url": "assets/sps/Robots/assets/characters/enemies/Wall-e_2.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-danger_disc-data",
+        "url": "data/entities/sps/SketchBook-danger_disc.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-danger_disc-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/001_DangerDiscb.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-danger_disc-2",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/001_DangerDisc2.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-trangle-data",
+        "url": "data/entities/sps/SketchBook-trangle.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-trangle-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/002_Trangle.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-trangle-2",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/002_Trangle2.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-tomato-data",
+        "url": "data/entities/sps/SketchBook-tomato.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-tomato-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/003_Tomato.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-tomato-2",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/003_Tomato2.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-sharp_spiral-data",
+        "url": "data/entities/sps/SketchBook-sharp_spiral.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-sharp_spiral-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/004_TheSharpSpiral.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-sharp_spiral-2",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/004_TheSharpSpiral2.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-thirteen_legged_monster-data",
+        "url": "data/entities/sps/SketchBook-thirteen_legged_monster.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-thirteen_legged_monster-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/005_13LeggedMonster1.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-thirteen_legged_monster-2",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/005_13LeggedMonster2.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-thirteen_legged_monster-3",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/005_13LeggedMonster3.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-trx-data",
+        "url": "data/entities/sps/SketchBook-trx.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-trx-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/007_TRainbowsaurusRex.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-trx-2",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/007_TRainbowsaurusRex2.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-trx-3",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/007_TRainbowsaurusRex3.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-trx-4",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/007_TRainbowsaurusRex4.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-trx-5",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/007_TRainbowsaurusRex5.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-skaryteeth-data",
+        "url": "data/entities/sps/SketchBook-skaryteeth.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-skaryteeth-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/SkaryTeeth_Pixel.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-mrwave67-data",
+        "url": "data/entities/sps/SketchBook-mrwave67.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-mrwave67-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/mrwavesmall_1769889898420.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-mrtorch3-data",
+        "url": "data/entities/sps/SketchBook-mrtorch3.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-mrtorch3-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/mr_torch_small_png_1769890617641.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-mrtsunami-data",
+        "url": "data/entities/sps/SketchBook-mrtsunami.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-mrtsunami-1",
+        "url": "assets/sps/SketchBook/assets/characters/enemies/mr_tsunami_1769891047253.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-radialProjectileWeapon-data",
+        "url": "data/entities/sps/SketchBook-radialProjectileWeapon.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-radialProjectileWeapon-1",
+        "url": "assets/sps/SketchBook/assets/items/Multitool-small.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-radialBullet-data",
+        "url": "data/entities/sps/SketchBook-radialBullet.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-radialBullet-1",
+        "url": "assets/sps/SketchBook/assets/items/Multitool-small.png"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-radialBullet-2",
+        "url": "assets/sps/SketchBook/assets/items/Multitool-small.png"
+      },
+      {
+        "type": "json",
+        "key": "SketchBook-veggie_stix-data",
+        "url": "data/entities/sps/SketchBook-veggie_stix.json"
+      },
+      {
+        "type": "image",
+        "key": "SketchBook-veggie_stix-1",
+        "url": "assets/sps/SketchBook/assets/items/VeggieStixx_Small.png"
+      },
+      {
+        "type": "json",
+        "key": "base-skeleton-data",
+        "url": "data/entities/sps/base-skeleton.json"
+      },
+      {
+        "type": "image",
+        "key": "base-skeleton-1",
+        "url": "assets/sps/base/assets/characters/enemies/skeleton-1.png"
+      },
+      {
+        "type": "image",
+        "key": "base-skeleton-2",
+        "url": "assets/sps/base/assets/characters/enemies/skeleton-2.png"
+      },
+      {
+        "type": "json",
+        "key": "base-micWeapon-data",
+        "url": "data/entities/sps/base-micWeapon.json"
+      },
+      {
+        "type": "image",
+        "key": "base-micWeapon-1",
+        "url": "assets/sps/base/assets/items/mic.png"
+      },
+      {
+        "type": "json",
+        "key": "base-discoBall-data",
+        "url": "data/entities/sps/base-discoBall.json"
+      },
+      {
+        "type": "image",
+        "key": "base-discoBall-1",
+        "url": "assets/sps/base/assets/items/ball-1.png"
+      },
+      {
+        "type": "image",
+        "key": "base-discoBall-2",
+        "url": "assets/sps/base/assets/items/ball-2.png"
+      },
+      {
+        "type": "json",
+        "key": "base-radialBullet-data",
+        "url": "data/entities/sps/base-radialBullet.json"
+      },
+      {
+        "type": "image",
+        "key": "base-radialBullet-1",
+        "url": "assets/sps/base/assets/items/ball-1.png"
+      },
+      {
+        "type": "image",
+        "key": "base-radialBullet-2",
+        "url": "assets/sps/base/assets/items/ball-2.png"
+      },
+      {
+        "type": "json",
+        "key": "base-candy-data",
+        "url": "data/entities/sps/base-candy.json"
+      },
+      {
+        "type": "image",
+        "key": "base-candy-1",
+        "url": "assets/sps/base/assets/items/candy.png"
+      },
+      {
+        "type": "json",
+        "key": "base-regularFlower-data",
+        "url": "data/entities/sps/base-regularFlower.json"
+      },
+      {
+        "type": "image",
+        "key": "base-regularFlower-1",
+        "url": "assets/sps/base/assets/items/RegularFlower.png"
+      },
+      {
+        "type": "json",
+        "key": "base-electrifiedSword-data",
+        "url": "data/entities/sps/base-electrifiedSword.json"
+      },
+      {
+        "type": "image",
+        "key": "base-electrifiedSword-1",
+        "url": "assets/sps/base/assets/characters/enemies/006_ElectrifiedSword.png"
+      },
+      {
+        "type": "image",
+        "key": "base-electrifiedSword-2",
+        "url": "assets/sps/base/assets/characters/enemies/006_ElectrifiedSword2.png"
+      },
+      {
+        "type": "image",
+        "key": "base-electrifiedSword-3",
+        "url": "assets/sps/base/assets/characters/enemies/006_ElectrifiedSword3.png"
+      },
+      {
+        "type": "json",
+        "key": "base-radialProjectilePickup-data",
+        "url": "data/entities/sps/base-radialProjectilePickup.json"
+      },
+      {
+        "type": "image",
+        "key": "base-radialProjectilePickup-1",
+        "url": "assets/sps/base/assets/items/ball-1.png"
+      },
+      {
+        "type": "image",
+        "key": "base-radialProjectilePickup-2",
+        "url": "assets/sps/base/assets/items/ball-2.png"
+      },
+      {
+        "type": "json",
+        "key": "base-default-data",
+        "url": "data/entities/sps/base-default.json"
+      },
+      {
+        "type": "image",
+        "key": "base-default-1",
+        "url": "assets/sps/base/assets/characters/player/player-1.png"
+      },
+      {
+        "type": "image",
+        "key": "base-default-2",
+        "url": "assets/sps/base/assets/characters/player/player-2.png"
+      },
+      {
+        "type": "image",
+        "key": "base-default-3",
+        "url": "assets/sps/base/assets/characters/player/player-1.png"
+      },
+      {
+        "type": "image",
+        "key": "base-default-4",
+        "url": "assets/sps/base/assets/characters/player/player-2.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-skeleton-data",
+        "url": "data/entities/sps/medieval-skeleton.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-skeleton-1",
+        "url": "assets/sps/medieval/assets/characters/enemies/skeleton-1.png"
+      },
+      {
+        "type": "image",
+        "key": "medieval-skeleton-2",
+        "url": "assets/sps/medieval/assets/characters/enemies/skeleton-2.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-skeletonKnight-data",
+        "url": "data/entities/sps/medieval-skeletonKnight.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-skeletonKnight-1",
+        "url": "assets/sps/medieval/assets/characters/enemies/skeleton-1.png"
+      },
+      {
+        "type": "image",
+        "key": "medieval-skeletonKnight-2",
+        "url": "assets/sps/medieval/assets/characters/enemies/skeleton-2.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char03-data",
+        "url": "data/entities/sps/medieval-char03.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char03-1",
+        "url": "assets/sps/medieval/assets/enemies/char_03.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char04-data",
+        "url": "data/entities/sps/medieval-char04.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char04-1",
+        "url": "assets/sps/medieval/assets/enemies/char_04.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char05-data",
+        "url": "data/entities/sps/medieval-char05.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char05-1",
+        "url": "assets/sps/medieval/assets/enemies/char_05.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char06-data",
+        "url": "data/entities/sps/medieval-char06.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char06-1",
+        "url": "assets/sps/medieval/assets/enemies/char_06.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char07-data",
+        "url": "data/entities/sps/medieval-char07.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char07-1",
+        "url": "assets/sps/medieval/assets/enemies/char_07.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char08-data",
+        "url": "data/entities/sps/medieval-char08.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char08-1",
+        "url": "assets/sps/medieval/assets/enemies/char_08.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char09-data",
+        "url": "data/entities/sps/medieval-char09.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char09-1",
+        "url": "assets/sps/medieval/assets/enemies/char_09.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char10-data",
+        "url": "data/entities/sps/medieval-char10.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char10-1",
+        "url": "assets/sps/medieval/assets/enemies/char_10.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char11-data",
+        "url": "data/entities/sps/medieval-char11.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char11-1",
+        "url": "assets/sps/medieval/assets/enemies/char_11.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char12-data",
+        "url": "data/entities/sps/medieval-char12.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char12-1",
+        "url": "assets/sps/medieval/assets/enemies/char_12.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char13-data",
+        "url": "data/entities/sps/medieval-char13.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char13-1",
+        "url": "assets/sps/medieval/assets/enemies/char_13.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char14-data",
+        "url": "data/entities/sps/medieval-char14.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char14-1",
+        "url": "assets/sps/medieval/assets/enemies/char_14.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char15-data",
+        "url": "data/entities/sps/medieval-char15.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char15-1",
+        "url": "assets/sps/medieval/assets/enemies/char_15.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char16-data",
+        "url": "data/entities/sps/medieval-char16.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char16-1",
+        "url": "assets/sps/medieval/assets/enemies/char_16.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char19-data",
+        "url": "data/entities/sps/medieval-char19.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char19-1",
+        "url": "assets/sps/medieval/assets/enemies/char_19.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char20-data",
+        "url": "data/entities/sps/medieval-char20.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char20-1",
+        "url": "assets/sps/medieval/assets/enemies/char_20.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char21-data",
+        "url": "data/entities/sps/medieval-char21.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char21-1",
+        "url": "assets/sps/medieval/assets/enemies/char_21.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char22-data",
+        "url": "data/entities/sps/medieval-char22.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char22-1",
+        "url": "assets/sps/medieval/assets/enemies/char_22.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char23-data",
+        "url": "data/entities/sps/medieval-char23.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char23-1",
+        "url": "assets/sps/medieval/assets/enemies/char_23.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-char24-data",
+        "url": "data/entities/sps/medieval-char24.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-char24-1",
+        "url": "assets/sps/medieval/assets/enemies/char_24.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-royalCandy-data",
+        "url": "data/entities/sps/medieval-royalCandy.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-royalCandy-1",
+        "url": "assets/sps/medieval/assets/items/candy.png"
+      },
+      {
+        "type": "json",
+        "key": "medieval-default-data",
+        "url": "data/entities/sps/medieval-default.json"
+      },
+      {
+        "type": "image",
+        "key": "medieval-default-1",
+        "url": "assets/sps/medieval/assets/characters/player/player-1.png"
+      },
+      {
+        "type": "image",
+        "key": "medieval-default-2",
+        "url": "assets/sps/medieval/assets/characters/player/player-2.png"
+      },
+      {
+        "type": "image",
+        "key": "medieval-default-3",
+        "url": "assets/sps/medieval/assets/characters/player/player-1.png"
+      },
+      {
+        "type": "image",
+        "key": "medieval-default-4",
+        "url": "assets/sps/medieval/assets/characters/player/player-2.png"
+      }
+    ]
+  }
+}

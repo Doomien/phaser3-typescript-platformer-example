@@ -1,0 +1,35 @@
+{
+  "id": "SketchBook-thirteen_legged_monster",
+  "name": "SketchBook 13-Legged Monster",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-thirteen_legged_monster-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/005_13LeggedMonster1.png",
+    "frameWidth": 70,
+    "frameHeight": 70
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "SketchBook-thirteen_legged_monster-1",
+      "SketchBook-thirteen_legged_monster-2",
+      "SketchBook-thirteen_legged_monster-3"
+    ],
+    "frameRate": 4,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 70,
+    "bodyHeight": 70,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 8,
+    "speed": 0.35,
+    "attackStrength": 3,
+    "attackSpeed": 700,
+    "attackRange": 50,
+    "pack": "SketchBook",
+    "originalId": "thirteen_legged_monster"
+  }
+}

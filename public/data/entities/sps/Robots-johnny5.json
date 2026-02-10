@@ -1,0 +1,25 @@
+{
+  "id": "Robots-johnny5",
+  "name": "Robots Johnny 5",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-johnny5-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/Johnny5.png",
+    "frameWidth": 69,
+    "frameHeight": 102
+  },
+  "physics": {
+    "bodyWidth": 69,
+    "bodyHeight": 102,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 7,
+    "speed": 0.55,
+    "attackStrength": 2,
+    "attackSpeed": 450,
+    "attackRange": 50,
+    "pack": "Robots",
+    "originalId": "johnny5"
+  }
+}

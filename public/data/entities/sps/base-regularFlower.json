@@ -1,0 +1,20 @@
+{
+  "id": "base-regularFlower",
+  "name": "base Regular Flower",
+  "category": "collectible",
+  "sprite": {
+    "key": "base-regularFlower-1",
+    "source": "assets/sps/base/assets/items/RegularFlower.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "base",
+    "originalId": "regularFlower"
+  }
+}

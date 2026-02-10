@@ -1,0 +1,20 @@
+{
+  "id": "base-micWeapon",
+  "name": "base Microphone",
+  "category": "weapon",
+  "sprite": {
+    "key": "base-micWeapon-1",
+    "source": "assets/sps/base/assets/items/mic.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "base",
+    "originalId": "micWeapon"
+  }
+}

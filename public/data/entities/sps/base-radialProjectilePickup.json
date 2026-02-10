@@ -1,0 +1,29 @@
+{
+  "id": "base-radialProjectilePickup",
+  "name": "base Radial Projectile Pickup",
+  "category": "collectible",
+  "sprite": {
+    "key": "base-radialProjectilePickup-1",
+    "source": "assets/sps/base/assets/items/ball-1.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "base-radialProjectilePickup-1",
+      "base-radialProjectilePickup-2"
+    ],
+    "frameRate": 8,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "base",
+    "originalId": "radialProjectilePickup"
+  }
+}

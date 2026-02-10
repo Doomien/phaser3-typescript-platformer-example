@@ -1,0 +1,30 @@
+{
+  "id": "base-electrifiedSword",
+  "name": "base Electrified Sword",
+  "category": "collectible",
+  "sprite": {
+    "key": "base-electrifiedSword-1",
+    "source": "assets/sps/base/assets/characters/enemies/006_ElectrifiedSword.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "base-electrifiedSword-1",
+      "base-electrifiedSword-2",
+      "base-electrifiedSword-3"
+    ],
+    "frameRate": 8,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "base",
+    "originalId": "electrifiedSword"
+  }
+}

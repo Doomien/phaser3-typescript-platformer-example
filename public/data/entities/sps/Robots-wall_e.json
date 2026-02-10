@@ -1,0 +1,25 @@
+{
+  "id": "Robots-wall_e",
+  "name": "Robots Wall-E",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-wall_e-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/Wall-e_2.png",
+    "frameWidth": 112,
+    "frameHeight": 112
+  },
+  "physics": {
+    "bodyWidth": 112,
+    "bodyHeight": 112,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 5,
+    "speed": 0.35,
+    "attackStrength": 1,
+    "attackSpeed": 650,
+    "attackRange": 35,
+    "pack": "Robots",
+    "originalId": "wall_e"
+  }
+}

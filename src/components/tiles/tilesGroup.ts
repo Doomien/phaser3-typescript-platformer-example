@@ -1,11 +1,13 @@
-import TilesSingle from './tilesSingle'
+import Phaser from 'phaser';
+import type { TilesConfig } from '../../types/index';
+import TilesSingle from './tilesSingle';
 
 export default class TilesGroup extends Phaser.GameObjects.Group {
   constructor(scene: Phaser.Scene, tiles: TilesConfig[]) {
-    super(scene)
+    super(scene);
 
-    tiles.forEach(tile => {
-      this.add(new TilesSingle(scene, tile.x, tile.y, tile.texture))
-    })
+    tiles.forEach((tile) => {
+      this.add(new TilesSingle(scene, tile.x, tile.y, tile.texture));
+    });
   }
 }

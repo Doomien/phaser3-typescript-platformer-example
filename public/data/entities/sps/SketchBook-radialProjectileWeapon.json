@@ -1,0 +1,20 @@
+{
+  "id": "SketchBook-radialProjectileWeapon",
+  "name": "SketchBook Radial Projectile",
+  "category": "weapon",
+  "sprite": {
+    "key": "SketchBook-radialProjectileWeapon-1",
+    "source": "assets/sps/SketchBook/assets/items/Multitool-small.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "SketchBook",
+    "originalId": "radialProjectileWeapon"
+  }
+}

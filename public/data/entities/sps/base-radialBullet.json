@@ -1,0 +1,29 @@
+{
+  "id": "base-radialBullet",
+  "name": "base Radial Bullet",
+  "category": "projectile",
+  "sprite": {
+    "key": "base-radialBullet-1",
+    "source": "assets/sps/base/assets/items/ball-1.png",
+    "frameWidth": 30,
+    "frameHeight": 30
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "base-radialBullet-1",
+      "base-radialBullet-2"
+    ],
+    "frameRate": 8,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 30,
+    "bodyHeight": 30,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "base",
+    "originalId": "radialBullet"
+  }
+}

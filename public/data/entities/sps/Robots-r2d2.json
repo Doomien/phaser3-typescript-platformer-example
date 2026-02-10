@@ -1,0 +1,25 @@
+{
+  "id": "Robots-r2d2",
+  "name": "Robots R2-D2",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-r2d2-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/R2D2.png",
+    "frameWidth": 68,
+    "frameHeight": 96
+  },
+  "physics": {
+    "bodyWidth": 68,
+    "bodyHeight": 96,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 6,
+    "speed": 0.4,
+    "attackStrength": 2,
+    "attackSpeed": 600,
+    "attackRange": 45,
+    "pack": "Robots",
+    "originalId": "r2d2"
+  }
+}

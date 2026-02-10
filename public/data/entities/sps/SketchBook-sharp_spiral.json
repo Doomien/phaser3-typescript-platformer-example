@@ -1,0 +1,34 @@
+{
+  "id": "SketchBook-sharp_spiral",
+  "name": "SketchBook Sharp Spiral",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-sharp_spiral-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/004_TheSharpSpiral.png",
+    "frameWidth": 60,
+    "frameHeight": 66
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "SketchBook-sharp_spiral-1",
+      "SketchBook-sharp_spiral-2"
+    ],
+    "frameRate": 5,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 66,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 6,
+    "speed": 0.6,
+    "attackStrength": 2,
+    "attackSpeed": 500,
+    "attackRange": 40,
+    "pack": "SketchBook",
+    "originalId": "sharp_spiral"
+  }
+}

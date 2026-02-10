@@ -1,0 +1,34 @@
+{
+  "id": "medieval-default",
+  "name": "medieval Knight",
+  "category": "character",
+  "sprite": {
+    "key": "medieval-default-1",
+    "source": "assets/sps/medieval/assets/characters/player/player-1.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "medieval-default-1",
+      "medieval-default-2",
+      "medieval-default-3",
+      "medieval-default-4"
+    ],
+    "frameRate": 8,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "health": 55,
+    "baseSpeed": 3,
+    "level": 1,
+    "pack": "medieval",
+    "originalId": "default"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Robots-optimus_prime",
+  "name": "Robots Optimus Prime",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-optimus_prime-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/OptimusPrime.png",
+    "frameWidth": 102,
+    "frameHeight": 169
+  },
+  "physics": {
+    "bodyWidth": 102,
+    "bodyHeight": 169,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 15,
+    "speed": 0.4,
+    "attackStrength": 6,
+    "attackSpeed": 650,
+    "attackRange": 75,
+    "pack": "Robots",
+    "originalId": "optimus_prime"
+  }
+}

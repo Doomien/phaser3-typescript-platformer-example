@@ -1,0 +1,25 @@
+{
+  "id": "medieval-char03",
+  "name": "medieval Medieval Enemy 03",
+  "category": "enemy",
+  "sprite": {
+    "key": "medieval-char03-1",
+    "source": "assets/sps/medieval/assets/enemies/char_03.png",
+    "frameWidth": 141,
+    "frameHeight": 286
+  },
+  "physics": {
+    "bodyWidth": 141,
+    "bodyHeight": 286,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 3,
+    "speed": 0.4,
+    "attackStrength": 1,
+    "attackSpeed": 500,
+    "attackRange": 40,
+    "pack": "medieval",
+    "originalId": "char03"
+  }
+}

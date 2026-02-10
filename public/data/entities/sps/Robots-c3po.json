@@ -1,0 +1,25 @@
+{
+  "id": "Robots-c3po",
+  "name": "Robots C-3PO",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-c3po-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/C3PO_2.png",
+    "frameWidth": 80,
+    "frameHeight": 162
+  },
+  "physics": {
+    "bodyWidth": 80,
+    "bodyHeight": 162,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 5,
+    "speed": 0.3,
+    "attackStrength": 2,
+    "attackSpeed": 700,
+    "attackRange": 40,
+    "pack": "Robots",
+    "originalId": "c3po"
+  }
+}

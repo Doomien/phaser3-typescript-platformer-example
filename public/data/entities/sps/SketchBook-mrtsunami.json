@@ -1,0 +1,25 @@
+{
+  "id": "SketchBook-mrtsunami",
+  "name": "SketchBook Mr Tsunami",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-mrtsunami-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/mr_tsunami_1769891047253.png",
+    "frameWidth": 342,
+    "frameHeight": 500
+  },
+  "physics": {
+    "bodyWidth": 342,
+    "bodyHeight": 500,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 3,
+    "speed": 2,
+    "attackStrength": 0,
+    "attackSpeed": 500,
+    "attackRange": 40,
+    "pack": "SketchBook",
+    "originalId": "mrtsunami"
+  }
+}

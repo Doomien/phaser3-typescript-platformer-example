@@ -1,0 +1,29 @@
+{
+  "id": "base-discoBall",
+  "name": "base Disco Ball",
+  "category": "projectile",
+  "sprite": {
+    "key": "base-discoBall-1",
+    "source": "assets/sps/base/assets/items/ball-1.png",
+    "frameWidth": 60,
+    "frameHeight": 60
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "base-discoBall-1",
+      "base-discoBall-2"
+    ],
+    "frameRate": 8,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 60,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "base",
+    "originalId": "discoBall"
+  }
+}

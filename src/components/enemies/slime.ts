@@ -1,32 +1,40 @@
-import EnemyClass from './enemyClass'
+import Phaser from 'phaser';
+import type { EntityData } from '../../types/index';
+import EnemyClass from './enemyClass';
+
 export default class SlimeSprite extends EnemyClass {
   constructor(scene: Phaser.Scene, x: number, y: number) {
-    super(scene, x, y, 'slime')
-    scene.add.existing(this)
-    scene.physics.add.existing(this)
+    super(scene, x, y, 'slime');
+
+    const data = scene.cache.json.get('slime-data') as EntityData;
+    const anim = data.animation!;
+    const physics = data.physics!;
 
     scene.anims.create({
-      key: 'crawl',
-      frames: scene.anims.generateFrameNumbers('slime', { start: 0, end: 4 }),
-      frameRate: 6,
-      yoyo: true,
-      repeat: -1
-    })
-    this.play('crawl')
+      key: anim.key,
+      frames: scene.anims.generateFrameNumbers('slime', {
+        start: anim.startFrame ?? 0,
+        end: anim.endFrame ?? 4,
+      }),
+      frameRate: anim.frameRate ?? 6,
+      yoyo: anim.yoyo ?? true,
+      repeat: anim.repeat ?? -1,
+    });
+    this.play(anim.key);
 
-    //@ts-ignore
-    this.body.setVelocityX(-60)
-    this.setOrigin(0.5, 1)
-    this.setScale(1)
-    this.body.setSize(this.width - 40, this.height - 20)
-    this.body.setOffset(20, 20)
+    const body = this.body as Phaser.Physics.Arcade.Body;
+    body.setVelocityX(physics.velocityX ?? -60);
+    this.setOrigin(physics.originX ?? 0.5, physics.originY ?? 1);
+    this.setScale(1);
+    body.setSize(this.width - 40, this.height - 20);
+    body.setOffset(20, 20);
   }
 
-  update() {}
+  update() { }
 
   kill() {
-    if (this.dead) return
-    this.setFrame(5)
-    this.removeEnemy()
+    if (this.dead) return;
+    this.setFrame(5);
+    this.removeEnemy();
   }
 }

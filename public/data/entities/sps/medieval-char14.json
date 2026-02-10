@@ -1,0 +1,25 @@
+{
+  "id": "medieval-char14",
+  "name": "medieval Medieval Enemy 14",
+  "category": "enemy",
+  "sprite": {
+    "key": "medieval-char14-1",
+    "source": "assets/sps/medieval/assets/enemies/char_14.png",
+    "frameWidth": 124,
+    "frameHeight": 310
+  },
+  "physics": {
+    "bodyWidth": 124,
+    "bodyHeight": 310,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 3,
+    "speed": 0.4,
+    "attackStrength": 1,
+    "attackSpeed": 500,
+    "attackRange": 40,
+    "pack": "medieval",
+    "originalId": "char14"
+  }
+}

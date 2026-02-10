@@ -1,0 +1,25 @@
+{
+  "id": "SketchBook-mrwave67",
+  "name": "SketchBook mrwave",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-mrwave67-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/mrwavesmall_1769889898420.png",
+    "frameWidth": 67,
+    "frameHeight": 66
+  },
+  "physics": {
+    "bodyWidth": 67,
+    "bodyHeight": 66,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 7,
+    "speed": 0.5,
+    "attackStrength": 10,
+    "attackSpeed": 500,
+    "attackRange": 40,
+    "pack": "SketchBook",
+    "originalId": "mrwave67"
+  }
+}

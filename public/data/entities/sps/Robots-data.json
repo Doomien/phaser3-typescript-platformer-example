@@ -1,0 +1,25 @@
+{
+  "id": "Robots-data",
+  "name": "Robots Data",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-data-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/Data.png",
+    "frameWidth": 65,
+    "frameHeight": 167
+  },
+  "physics": {
+    "bodyWidth": 65,
+    "bodyHeight": 167,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 10,
+    "speed": 0.5,
+    "attackStrength": 4,
+    "attackSpeed": 500,
+    "attackRange": 60,
+    "pack": "Robots",
+    "originalId": "data"
+  }
+}

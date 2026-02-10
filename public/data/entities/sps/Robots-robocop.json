@@ -1,0 +1,25 @@
+{
+  "id": "Robots-robocop",
+  "name": "Robots RoboCop",
+  "category": "enemy",
+  "sprite": {
+    "key": "Robots-robocop-1",
+    "source": "assets/sps/Robots/assets/characters/enemies/RoboCop.png",
+    "frameWidth": 83,
+    "frameHeight": 168
+  },
+  "physics": {
+    "bodyWidth": 83,
+    "bodyHeight": 168,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 12,
+    "speed": 0.35,
+    "attackStrength": 4,
+    "attackSpeed": 600,
+    "attackRange": 80,
+    "pack": "Robots",
+    "originalId": "robocop"
+  }
+}

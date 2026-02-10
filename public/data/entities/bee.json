@@ -1,0 +1,25 @@
+{
+    "id": "bee",
+    "name": "Bee",
+    "category": "enemy",
+    "sprite": {
+        "key": "bee",
+        "source": "assets/img/bee.png",
+        "frameWidth": 128,
+        "frameHeight": 100
+    },
+    "animation": {
+        "key": "fly",
+        "startFrame": 0,
+        "endFrame": 1,
+        "frameRate": 8,
+        "repeat": -1
+    },
+    "physics": {
+        "velocityX": -120,
+        "bodyWidth": 80,
+        "bodyHeight": 135,
+        "originX": 0.5,
+        "originY": 1
+    }
+}

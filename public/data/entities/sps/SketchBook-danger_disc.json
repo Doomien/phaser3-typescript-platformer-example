@@ -1,0 +1,34 @@
+{
+  "id": "SketchBook-danger_disc",
+  "name": "SketchBook Danger Disc",
+  "category": "enemy",
+  "sprite": {
+    "key": "SketchBook-danger_disc-1",
+    "source": "assets/sps/SketchBook/assets/characters/enemies/001_DangerDiscb.png",
+    "frameWidth": 60,
+    "frameHeight": 66
+  },
+  "animation": {
+    "key": "walk",
+    "frames": [
+      "SketchBook-danger_disc-1",
+      "SketchBook-danger_disc-2"
+    ],
+    "frameRate": 6,
+    "repeat": -1
+  },
+  "physics": {
+    "bodyWidth": 60,
+    "bodyHeight": 66,
+    "velocityX": -100
+  },
+  "properties": {
+    "health": 4,
+    "speed": 0.5,
+    "attackStrength": 1,
+    "attackSpeed": 450,
+    "attackRange": 40,
+    "pack": "SketchBook",
+    "originalId": "danger_disc"
+  }
+}

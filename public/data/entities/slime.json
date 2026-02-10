@@ -1,0 +1,24 @@
+{
+    "id": "slime",
+    "name": "Slime",
+    "category": "enemy",
+    "sprite": {
+        "key": "slime",
+        "source": "assets/img/slime.png",
+        "frameWidth": 112,
+        "frameHeight": 68
+    },
+    "animation": {
+        "key": "crawl",
+        "startFrame": 0,
+        "endFrame": 4,
+        "frameRate": 6,
+        "repeat": -1,
+        "yoyo": true
+    },
+    "physics": {
+        "velocityX": -60,
+        "originX": 0.5,
+        "originY": 1
+    }
+}

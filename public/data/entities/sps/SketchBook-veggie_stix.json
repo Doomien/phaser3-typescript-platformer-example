@@ -1,0 +1,20 @@
+{
+  "id": "SketchBook-veggie_stix",
+  "name": "SketchBook Veggie Stix",
+  "category": "collectible",
+  "sprite": {
+    "key": "SketchBook-veggie_stix-1",
+    "source": "assets/sps/SketchBook/assets/items/VeggieStixx_Small.png",
+    "frameWidth": 32,
+    "frameHeight": 28
+  },
+  "physics": {
+    "bodyWidth": 32,
+    "bodyHeight": 28,
+    "velocityX": 0
+  },
+  "properties": {
+    "pack": "SketchBook",
+    "originalId": "veggie_stix"
+  }
+}
