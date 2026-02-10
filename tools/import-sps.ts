@@ -1,7 +1,29 @@
 import fs from 'fs';
 import path from 'path';
 
-const SPS_PATH = path.resolve('../SketchPadSurvivors');
+const resolveSpsPath = (): string => {
+    const explicit = process.env.SPS_ROOT
+        ? path.resolve(process.env.SPS_ROOT)
+        : null;
+    if (explicit) return explicit;
+
+    const kstRootCandidates = [
+        process.env.KST_GAMES_ROOT ? path.resolve(process.env.KST_GAMES_ROOT) : null,
+        path.resolve(process.cwd(), '..'),
+        path.resolve(process.cwd(), '../..')
+    ].filter((value): value is string => Boolean(value));
+
+    for (const root of kstRootCandidates) {
+        const candidate = path.join(root, 'SketchPadSurvivors');
+        if (fs.existsSync(path.join(candidate, 'packs'))) {
+            return candidate;
+        }
+    }
+
+    return path.resolve('../SketchPadSurvivors');
+};
+
+const SPS_PATH = resolveSpsPath();
 const PACKS_PATH = path.join(SPS_PATH, 'packs');
 const OUTPUT_DIR = path.resolve('public/data/entities/sps');
 const SYMLINK_PATH = path.resolve('public/assets/sps');
@@ -11,11 +33,29 @@ if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
-// 1. Create Symlink if it doesn't exist
-if (!fs.existsSync(SYMLINK_PATH)) {
+const ensureSpsSymlink = () => {
+    try {
+        const existing = fs.lstatSync(SYMLINK_PATH);
+        if (existing.isSymbolicLink()) {
+            const currentTarget = fs.readlinkSync(SYMLINK_PATH);
+            const resolvedTarget = path.resolve(path.dirname(SYMLINK_PATH), currentTarget);
+            if (resolvedTarget === PACKS_PATH) return;
+            fs.unlinkSync(SYMLINK_PATH);
+        } else {
+            fs.rmSync(SYMLINK_PATH, { recursive: true, force: true });
+        }
+    } catch (error: any) {
+        if (error?.code !== 'ENOENT') throw error;
+    }
+
     console.log(`Creating symlink from ${PACKS_PATH} to ${SYMLINK_PATH}`);
     fs.symlinkSync(PACKS_PATH, SYMLINK_PATH, 'dir');
+};
+
+if (!fs.existsSync(PACKS_PATH)) {
+    throw new Error(`SketchPadSurvivors packs directory not found at ${PACKS_PATH}`);
 }
+ensureSpsSymlink();
 
 interface SPSEntity {
     name: string;

@@ -2,3 +2,6 @@
 /dist
 /.cache
 .DS_Store
+/public/assets/sps
+/src/**/*.js
+/src/**/*.js.map
